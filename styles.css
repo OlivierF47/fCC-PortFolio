@@ -1,3 +1,8 @@
+:root{
+    --background-color-header:#212E53;
+    --text-color-header:#EBACA2;
+    --underline-color:#CE6A6B;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +13,7 @@
     top:0;
     height:100px;
     width:100%;
-    background-color:blanchedalmond;
+    background-color:var(--background-color-header);
     text-align:flex-start;
 }
 #navbar li{
@@ -20,9 +25,9 @@
 #navbar li{
     font-size:20px;
     font-weight:bold;
-    color:blueviolet;
+    color:var(--text-color-header);
     text-decoration:none;
-    background:linear-gradient(0deg, rgba(255,0,0,0.5)0%, rgba(255,0,0,0.5)2px, transparent 3px) no-repeat;
+    background:linear-gradient(0deg, var(--underline-color)0%, var(--underline-color)2px, transparent 3px) no-repeat;
     background-size:0 100%;
     transition: background-size .3s;
 }
