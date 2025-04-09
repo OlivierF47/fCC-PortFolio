@@ -2,6 +2,7 @@
     --background-color-header:#212E53;
     --text-color-header:#EBACA2;
     --underline-color:#CE6A6B;
+    --color-main:#BED3C3;
 }
 *{
     box-sizing: border-box;
@@ -18,21 +19,20 @@
 }
 #navbar li{
     display:inline;
-    background-color:rgba(255,255,0,0.5);
-    border:none;
-    margin:0 20px;
-}
-#navbar li{
-    font-size:20px;
-    font-weight:bold;
+    font-size:27px;
+    font-family: "Playfair Display";
     color:var(--text-color-header);
     text-decoration:none;
     background:linear-gradient(0deg, var(--underline-color)0%, var(--underline-color)2px, transparent 3px) no-repeat;
     background-size:0 100%;
     transition: background-size .3s;
+    border:none;
+    margin:0 20px;
+    transition: 1s;
 }
 #navbar li:hover{
     animation:underlined 1s both;
+    
 }
 @keyframes underlined{
     from{
@@ -52,17 +52,47 @@
         }
 }
 #navbar ul{
-    margin-top:45px;
+    margin-top:30px;
 
 }
+body{
+    background-color:var(--color-main);
+    font-family: Monserrat
+}
 main{
-    margin-top:100px;
+    margin-top:100px; 
 }
 a{
     text-decoration: none;
 }
+#welcome-section{
+    margin:200px auto;
+    text-align: center;
+    overflow: hidden;
+}
+h1{
+    font-size:45px;
+}
+.animation-1{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#navbar a{
+    transform: translateX(10px);
+    transition: 1s;
+}
 
 
 
