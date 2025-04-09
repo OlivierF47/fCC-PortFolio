@@ -93,18 +93,21 @@ h1 {
     width: 100%;
   }
 }
-#navbar a {
-  transform: translateX(10px);
-  transition: 1s;
-}
+
 #contact-section ul {
-  display: flex;
+  
   list-style-type: none;
-  margin: 0 500px;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  
 }
 #contact-section li {
   margin: 0 auto;
   font-size: 1.4em;
+  display: inline;
+  
 }
 #footer-section {
   width: 100vw;
@@ -113,6 +116,45 @@ h1 {
   position: absolute;
   bottom: 0;
 }
+h1{
+    padding:15px; 
+}
 
+span{
+    display:inline-block;
+    text-transform:uppercase;
+    animation:bounce 1s ease alternate;
+    transition:0.5s;
+    position:relative;
+    padding:5px;
+}
+h1 span:hover{
+    animation:bounce 1s ease alternate infinite;
+    transition:1s;
+}
+h1 span:nth-child(1){
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.6s
+}
+h1 span:nth-child(4){
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(5){
+    animation-delay:1s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.2s;
+}
+@keyframes bounce{
+    100%{
+        top:-20px;
+        transform: rotate(360deg);
+    }
+}
 @media only screen and (max-width: 815px) {
 }
