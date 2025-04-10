@@ -5,6 +5,7 @@
   --text-color-header: #ebaca2;
   --underline-color: #ce6a6b;
   --color-main: #bed3c3;
+  --color-section:#4A919E;
 }
 * {
   box-sizing: border-box;
@@ -16,11 +17,11 @@ body {
     font-family:"Montserrat", Arial;
   }
 main {
-    margin-top: 100px;
+    margin-top:100px;
   }
 a {
     text-decoration: none;
-  }
+  } 
 /*Navbar et son anim*/
 
 #navbar {
@@ -80,21 +81,25 @@ a {
 /*Presentation*/
 
 #welcome-section {
-  margin: 200px auto;
+  margin:auto;
   text-align: center;
   overflow: hidden;
   height:600px;
+  z-index: 1;
 }
 h1 {
-  font-size: 45px;
+  font-size: 70px;
   padding:10px;
+  margin-top:150px;
+}
+#welcome-section p{
+  font-size:35px;
 }
 
 /*Effets de la présentation*/
 
 h1 .animation-3{
     display:inline-block;
-    text-transform:uppercase;
     animation:bounce 0.75s ease alternate;
     transition:0.5s;
     position:relative;
@@ -159,10 +164,17 @@ animation-delay: 1.2s;
 
 #myself-section{
   text-align: center;
-  height:700px;
+  height:800px;
+  background-color:var(--color-section);
+  padding-top:150px;
+  font-size:35px;
 }
 #myself-section h2{
+  font-size:70px;
   margin-bottom:20px;
+}
+#myself-section p{
+  margin:0 50px;
 }
 .reveal{
   animation:reveal linear;
@@ -170,6 +182,7 @@ animation-delay: 1.2s;
   animation-range-start: cover 0%;
   animation-range-end: cover 40%;
 }
+
 @keyframes reveal{
   from{
     opacity:0;
@@ -198,7 +211,7 @@ animation-delay: 1.2s;
   
 }
 #footer-section {
-
+  display:none;
 }
 @media only screen and (max-width: 815px) {
 }
