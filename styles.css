@@ -22,6 +22,9 @@ main {
 a {
     text-decoration: none;
   } 
+  html{
+    scroll-behavior: smooth;
+  }
 /*Navbar et son anim*/
 
 #navbar {
@@ -84,13 +87,13 @@ a {
   margin:auto;
   text-align: center;
   overflow: hidden;
-  height:600px;
+  height:100vh;
   z-index: 1;
 }
 h1 {
   font-size: 70px;
   padding:10px;
-  margin-top:150px;
+  margin-top:40vh;
 }
 #welcome-section p{
   font-size:35px;
@@ -164,7 +167,7 @@ animation-delay: 1.2s;
 
 #myself-section{
   text-align: center;
-  height:800px;
+  height:100vh;
   background-color:var(--color-section);
   padding-top:150px;
   font-size:35px;
@@ -172,6 +175,7 @@ animation-delay: 1.2s;
 #myself-section h2{
   font-size:70px;
   margin-bottom:20px;
+  margin-top:30vh;
 }
 #myself-section p{
   margin:0 50px;
