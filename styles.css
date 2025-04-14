@@ -25,6 +25,13 @@ a {
   html{
     scroll-behavior: smooth;
   }
+  .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    flex-direction: column;
+  }
 /*Navbar et son anim*/
 
 #navbar {
@@ -91,12 +98,11 @@ a {
   z-index: 1;
 }
 h1 {
-  font-size: 70px;
+  font-size:clamp(30px,7vw,70px);
   padding:10px;
-  margin-top:40vh;
 }
 #welcome-section p{
-  font-size:35px;
+  font-size:clamp(25px,5vw,50px);
 }
 
 /*Effets de la présentation*/
@@ -153,7 +159,7 @@ animation-delay: 1.2s;
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 300vh;
     width: 300%;
   }
 
@@ -169,17 +175,17 @@ animation-delay: 1.2s;
   text-align: center;
   height:100vh;
   background-color:var(--color-section);
-  padding-top:150px;
-  font-size:35px;
+  font-size: clamp(15px, 5vw, 50px);
+
 }
 #myself-section h2{
-  font-size:70px;
+  font-size: clamp(25px, 7vw, 70px);
   margin-bottom:20px;
-  margin-top:30vh;
 }
 #myself-section p{
   margin:0 50px;
 }
+
 .reveal{
   animation:reveal linear;
   animation-timeline:view();
