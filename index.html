@@ -7,19 +7,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair +Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="manifest" href="site.webmanifest" />
+        <title>Mon Portfolio</title>
     </head>
     <body><header>
             <nav id="navbar">
                 <ul>
                     <a href="#welcome-section"><li>Bienvenue&nbsp;!</li></a>
                     <a href="#myself-section"><li>Présentation</li></a>
-                    <a href="#project-section"><li>Mes Projets</li></a>
+                    <a href="#projects-section"><li>Mes Projets</li></a>
                     <a href="#contact-section"><li>Mes réseaux</li></a>
                 </ul>
             </nav>  
         </header>
             <main>
             <section id="welcome-section">
+                <div class="container">
                 <h1>
                     <span class="animation-3">S</span>
                     <span class="animation-3">a</span>
@@ -30,29 +37,57 @@
                 </h1>
                 <p class="animation-1">Moi c'est Olivier. Je suis dev Web donc...</p>
                 <p class="animation-2">Bienvenue dans mon univers&nbsp;!</p>
+            </div>
             </section>
             
             <section id="myself-section">
+                <div class="container">
                     <h2 class="reveal">Petite présentation</h2>
-                    <p class="reveal">Moi c'est Olivier Forabosco je suis actuellement en formation de développeur web au sein de l'AFEC a agen.</p>
-                    <p class="reveal">Passioné d'informatique depuis toujours je me suis récemment trouvé une passion pour le dévellopement Web</p>
-                    <p class="reveal">je consacre donc cet endroit pour vous partager mes créations et une partie de mon univers</p>
+                    <p class="reveal">Je m'appelle Olivier Forabosco et je suis actuellement en formation de développeur web au sein de l'AFEC, à Agen.</p>
+                    <p class="reveal">Depuis toujours passionné par l'informatique, j’ai récemment trouvé ma voie dans le développement web, un domaine qui allie logique, créativité et innovation.</p>
+                    <p class="reveal">Je consacre donc cet espace à vous partager mes créations et à vous faire découvrir un peu plus mon univers.</p>
                     <p class="reveal"><strong>ENJOY&nbsp;!</strong></p>
+                </div>
             </section>
-            <section id="projects">
-                <a id="profile-link" target="blank_"></a>
-                <div class="project-tile"></p>
+            <section id="projects-section">
+                <h2 class="title-projects">Mes Projets</h2>
+                <div id="container-projects">
+                    <div class="placement">
+                    <img src="Capture.PNG"class="project-tile" alt="">
+                    <h2 class="title">Documentation Page</h2>
+                    <p class="description">Ce projet a été réalisé dans le cadre de FreeCodeCamp. L’objectif : créer une page de documentation sur un sujet qu’on apprécie. J’ai naturellement choisi le langage C, car c’est avec lui que j’ai fait mes premiers pas en programmation.</p>
+                    </div>
+                    <div class="placement">
+                    <img src="Capture2.PNG"class="project-tile" alt="Encyclopédie pokemon">
+                    <h2 class="title">Encyclopédie Pokemon</h2>
+                    <p class="description">Réalisé en classe, ce projet consistait à créer une petite encyclopédie Pokémon en explorant les possibilités offertes par le CSS. J’ai choisi de le concevoir sous forme de carte Pokémon, pour mêler fun, nostalgie et code.</p>
+                    </div>
+                    <div class="placement">
+                    <img src="Capture3.PNG"class="project-tile" alt="Tribute page qui rend hommage a Hadès">
+                    <h2 class="title">Tribute Page</h2>
+                    <p class="description">Dans le cadre d’un projet FreeCodeCamp, il nous était demandé de rendre hommage à un personnage marquant. Étant attiré par la mythologie, j’ai naturellement choisi Hadès, une figure fascinante souvent méconnue.</p>
+                    </div>
+                    <div class="placement">
+                    <img src="Capture4.PNG"class="project-tile" alt="Formulaire d'inscription a un tournoi rocket league">
+                    <h2 class="title">Survey Form</h2>
+                    <p class="description">Il s’agit du formulaire d’inscription demandé dans le tout premier projet de la plateforme FreeCodeCamp. C’est donc ma toute première vraie création personnelle, celle qui a marqué le début de mon parcours dans le développement web.</p>
+                    </div>
+                </div>
             </section>
             <section id="contact-section">
+                <div class="contact-content">
                 <ul>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                    <li><a href=""><i class="fa-brands fa-github"></i> Github</a></li>
-                    <li><a href=""><i class="fa-solid fa-envelope"></i> Mail</a></li>
+                    <li><a href="https://www.instagram.com/olive.fora/" target="_blank"><i><img src="fa-instagram.webp" class="fa-brands">Instagram</i> </a></li>
+
+                    <li><a href="https://github.com/OlivierF47" target="_blank"><i><img src="fa-github.png" class="fa-brands">Github</i></a></li>
+                    <li><a href="mailto:olivier.forabosco05@gmail.com"><i><img src="fa-envelope.webp" class="fa-brands"> Mail</i></a></li>
                 </ul>
+                <p>Pour me joindre ou voir mes autres projets !</p>
+            </div>
             </section>
         </main>
         <footer>
-            <div id="footer-section"></div>
+            <div id="footer-section"><p>Portfolio d'entrainement freeCodeCamp</p></div>
         </footer>
     </body>
 </html>
