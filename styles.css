@@ -33,6 +33,16 @@ a {
     height:100%;
     flex-direction: column;
   }
+  html{
+    scroll-behavior: smooth;
+  }
+  .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    flex-direction: column;
+  }
 /*Navbar et son anim*/
 
 #navbar {
@@ -101,6 +111,7 @@ a {
   text-align: center;
   overflow: hidden;
   height:100vh;
+  height:100vh;
   z-index: 1;
 }
 h1 {
@@ -166,6 +177,7 @@ animation-delay: 1.2s;
 @keyframes slidein {
   from {
     margin-left: 300vh;
+    margin-left: 300vh;
     width: 300%;
   }
 
@@ -180,6 +192,7 @@ animation-delay: 1.2s;
 #myself-section{
   text-align: center;
   height:100vh;
+  height:100vh;
   background-color:var(--color-section);
   font-size:0.8rem;
   
@@ -193,6 +206,7 @@ animation-delay: 1.2s;
   margin:0 50px;
   margin-bottom: 20px;
 }
+
 
 .reveal{
   animation:reveal linear;
