@@ -57,7 +57,7 @@ a {
 }
 #navbar li {
   display: inline-block;
-  font-size: 50px;
+  font-size: 1rem;
   font-family: "Playfair Display";
   color: var(--text-color-header);
   text-decoration: none;
@@ -232,6 +232,7 @@ animation-delay: 1.2s;
   justify-content: space-between;
   align-items: center;      
   flex-direction: column;
+  width: 100%;
   margin-bottom:300px;
 }
 #projects-section .title-projects{
@@ -247,13 +248,13 @@ animation-delay: 1.2s;
   max-width: 1400px;
   height:100%;
   text-align: center;
+  margin: auto;
 }
 .project-tile {
   aspect-ratio: 1/1; 
   background-color: white;
   border: solid white;      
-  max-width: 550px;  
-  margin: 0 auto;
+  min-width: 90px;  
   object-fit: cover;
   width:90%;
   transition:1s;
@@ -273,6 +274,7 @@ animation-delay: 1.2s;
 }
 .placement{
   position:relative;
+  width:100%;
 }
 .title{
   font-size:0.7rem;
@@ -290,6 +292,7 @@ animation-delay: 1.2s;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  
 }
 #contact-section ul {
   list-style-type: none;
@@ -331,10 +334,10 @@ animation-delay: 1.2s;
 
 @media only screen and (max-width: 1235px){
   html{
-    font-size:45px;
+    font-size:40px;
   }
   main{
-    margin-top:300px;
+    margin-top:8rem;
   }
   #navbar {
     background-color: var(--background-color-header);
@@ -343,7 +346,7 @@ animation-delay: 1.2s;
     padding: 0;
     margin: auto;
     width: 100%;
-    height:300px;
+    height:8rem;
     border: transparent;
 }
 #navbar ul{
@@ -357,19 +360,37 @@ animation-delay: 1.2s;
   margin-top:10px;
 }
   .description{
-    margin:0 100px;
+    margin:0 auto;
+    font-size: 0.8rem;
+  }
+  #container-projects{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .project-tile{
+    display: flex;
+    max-width:250px;
+    overflow: hidden;
+    margin:0 auto;
   }
 }
 @media only screen and (max-width: 815px) {
   html{
-    font-size:45px;
+    font-size:37px;
   }
 
   
 }
 @media only screen and (max-width: 650px) {
   html{
-    font-size:35px;
+    font-size:27px;
   }
+}
+  @media only screen and (max-width: 400px) {
+    html{
+      font-size:17px;
+    }
 
 }
