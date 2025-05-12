@@ -40,5 +40,3 @@ Créer une page de **portfolio responsive** qui respecte les consignes suivantes
 
 ---
 
-## 📂 Structure du projet
-
